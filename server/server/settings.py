@@ -39,12 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'rest_framework',
-    'rest_framework.authtoken'
-    # 'corsheaders',
+    'rest_framework.authtoken',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -126,6 +127,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS_ALLOWED_ORIGINS = [
-#     'http://127.0.0.1:5500',
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://8000-monospace-learn-1712979519774.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev",
+    "http://localhost:5500",
+    
+]
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*']
