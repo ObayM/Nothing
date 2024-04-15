@@ -1,3 +1,11 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+## First app (Accounts)
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+### Features
+>>> Login ["Username","Password"]
+
+>>> Signup ["First Name", "Last Name", "Username", "Password", "Confirm Password", "Email",
+            "Phone Number","Country", "Date of Birth", "Gender"]
+
+>>> Logout 
+
+>>> User Profile [All of the information in signup, profile pic, Editing any feature]
