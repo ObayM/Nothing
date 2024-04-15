@@ -1,11 +1,18 @@
+# Installtion
+
+python -m venv venv
+In Windows : venv/Scripts/activate
+In Linux : source venv/bin/activate
+pip install django
+pip install djnagorestframework
+pip install django-cors-headres
+
 ## First app (Accounts)
 
 ### Features
->>> Login ["Username","Password"]
 
->>> Signup ["First Name", "Last Name", "Username", "Password", "Confirm Password", "Email",
-            "Phone Number","Country", "Date of Birth", "Gender"]
+> > > Login ["Username","Password"]
 
->>> Logout 
+> > > Signup
 
->>> User Profile [All of the information in signup, profile pic, Editing any feature]
+> > > Logout

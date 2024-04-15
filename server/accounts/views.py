@@ -44,5 +44,5 @@ def login(request):
 @api_view(['GET'])
 @authentication_classes([SessionAuthentication, TokenAuthentication])
 @permission_classes([IsAuthenticated])
-def test_token(request):
+def auth_token(request):
     return Response("passed!")
