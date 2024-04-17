@@ -11,8 +11,8 @@ pip install django-cors-headres
 
 ### Features
 
-> > > Login ["Username","Password"]
+#### Login ["Username","Password"]
 
-> > > Signup
+#### Signup
 
-> > > Logout
+#### Logout

@@ -1,19 +1,16 @@
-const apiUrl = 'http://127.0.0.1:8000/api/v1/signup';
-let userData = null; 
-const formData = {
-    first_name: 'agsd',
-    last_name: 'dg',
+const loginApi = 'http://127.0.0.1:8000/api/v1/login';
+let loginUserData = null; 
+const loginData = {
     username: '23',
-    email: '34@435.com',
     password: '123',
 };
 
-fetch(apiUrl, {
+fetch(loginApi, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify(formData),
+    body: JSON.stringify(loginData),
     })
     .then(response => {
         if (!response.ok) {
@@ -22,11 +19,11 @@ fetch(apiUrl, {
         return response.json();
     })
     .then(newUserData => {
-        userData = newUserData
+        loginUserData = newUserData
         console.log('New User Data:', newUserData);
     })
     .catch(error => {
         console.error('Error:', error);
     });
 
-console.log(userData);
+console.log(loginUserData);
