@@ -5,3 +5,5 @@
 /server/accounts/migrations/__pycache__
 /.vscode
 /test.rest
+/server/courses/__pycache__
+/server/courses/migrations/__pycache__
